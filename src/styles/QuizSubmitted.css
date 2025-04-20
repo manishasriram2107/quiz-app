@@ -1,0 +1,16 @@
+.quiz-submitted-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .quiz-submitted-container h2 {
+    color: #4CAF50;
+  }
+  
+  .quiz-submitted-container button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }

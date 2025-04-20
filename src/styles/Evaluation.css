@@ -1,0 +1,80 @@
+.evaluation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f4a261, #e76f51);
+  padding: 20px;
+}
+
+.evaluation-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.evaluation-card h2 {
+  color: #264653;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.evaluation-card h3 {
+  color: #2a9d8f;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.evaluation-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.get-certificate-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.get-certificate-btn:hover {
+  background-color: #1e776f;
+}
+
+@media (max-width: 480px) {
+  .evaluation-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .evaluation-card h2 {
+    font-size: 20px;
+  }
+
+  .evaluation-card h3 {
+    font-size: 18px;
+  }
+
+  .evaluation-card input {
+    font-size: 14px;
+  }
+
+  .get-certificate-btn {
+    font-size: 16px;
+  }
+}

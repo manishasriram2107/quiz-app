@@ -1,0 +1,80 @@
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    color: rgb(56, 53, 53);
+    font-family: "Arial", sans-serif;
+  }
+  
+  .question-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .question-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .option-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: #6dd5ed;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .option-btn:hover {
+    background: #2193b0;
+  }
+  
+  .submit-btn {
+    background: #ff5e62;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #ff9966;
+  }
+  .options button {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: rgba(8, 8, 8, 0.185);
+    cursor: pointer;
+    transition: 0.3s;
+    color: #333;
+  }
+  
+  .options button.selected {
+    border-color: #ff5733;
+    background-color: #ffebcc;
+  }
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  

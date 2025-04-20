@@ -1,0 +1,65 @@
+.flashcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2c426d; /* Adjust background color */
+}
+
+.flashcard-box {
+  width: 500px; /* Reduced width */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.test-code {
+  font-size: 14px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flashcard-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  max-height: 100px; /* Limit height */
+  overflow-y: auto; /* Enable scrolling */
+}
+
+.flashcard {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.answer {
+  color: blue;
+}

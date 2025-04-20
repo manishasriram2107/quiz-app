@@ -1,0 +1,91 @@
+/* Assignments Page Styles */
+body{
+    background: url("../images/lastbg.png") no-repeat center center/cover;
+}
+.assignments-container {
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #007bff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .back-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: rgb(39, 34, 34) !important; /* Use !important to override other styles */
+}
+
+.activity-options {
+  display: flex;
+  justify-content: center; /* Centers cards properly */
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between items */
+}
+
+  
+  
+  .activity-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .activity-card {
+    flex: 1 1 250px; /* Makes sure all cards have the same width */
+    max-width: 400px; /* Prevents them from stretching too much */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.activity-card img {
+    width: 100%; /* Ensures the image takes full width of the box */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 150px; /* Limits image size */
+    max-height: 150px; /* Prevents the image from becoming too large */
+    object-fit: contain; /* Ensures the entire image fits within the box */
+}
+
+  
+  .activity-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .activity-card p {
+    font-size: 14px;
+    color: gray;
+  }
+
+  
+  

@@ -1,0 +1,73 @@
+/* Main container */
+.enter-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: url('../images/lastbg.png') no-repeat center center/cover;
+}
+
+/* Dark Overlay */
+.enter-details-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adjust transparency as needed */
+  z-index: 1;
+}
+
+/* Card design */
+.enter-details-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover effect */
+.enter-details-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Button design */
+.btn.primary1 {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(135deg, #8e75ff, #5a3ee6);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(142, 117, 255, 0.4);
+  transition: transform 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn.primary:hover {
+  background: linear-gradient(135deg, #6a48e6, #3c1ec9);
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 15px rgba(142, 117, 255, 0.6);
+}

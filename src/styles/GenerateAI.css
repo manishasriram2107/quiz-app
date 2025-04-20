@@ -1,0 +1,131 @@
+/* General Styling */
+/* Position Back Button at the Top */
+.ai-wrapper .back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #4e48a3;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #e74c3c;
+}
+
+/* Ensure the container has relative positioning */
+.ai-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  height: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Back Button */
+  .back-btn {
+    background: #ff5e57;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background: #e74c3c;
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    border-color: #ff9f43;
+    outline: none;
+  }
+  
+  /* Generate Button */
+  .generate-btn {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .generate-btn:hover {
+    background: #27ae60;
+  }
+  
+  /* AI Results */
+  .ai-results {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ai-results h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .ai-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ai-results li {
+    background: #eaf2ff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .ai-wrapper {
+      max-width: 90%;
+      padding: 15px;
+    }
+  }
+  

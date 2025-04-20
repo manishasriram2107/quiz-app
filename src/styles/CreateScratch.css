@@ -1,0 +1,139 @@
+/* Modern and Sleek Styling */
+
+
+.scratch-container {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin: auto; /* Center horizontally */
+    margin-left: 0; /* Moves it to the left */
+}
+
+
+/* Title */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+/* Underline Effect */
+.title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #ff7eb3;
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
+/* Question Card */
+.question-card {
+    background: #5d6ecf26;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.question-number {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9a76;
+}
+
+/* Input Fields */
+.question-input,
+.option-input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(8, 6, 6);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+/* Placeholder Styling */
+
+.question-input::placeholder,
+.option-input::placeholder {
+    font-size: 12px;
+    color: rgba(49, 39, 39, 0.7);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.question-input:focus,
+.option-input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Options Layout */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.add-btn,
+.submit-btn {
+    margin-top: 20px;
+    padding: 12px 18px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.add-btn {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    color: white;
+    margin-left: 10px;
+}
+
+.add-btn:hover,
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,151 @@
+/* General Styling */
+.quiz-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Quiz Card */
+  .quiz-card {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Quiz Title */
+  .quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Quiz List */
+  .quiz-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Question Styling */
+  .quiz-question {
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+  }
+  
+  /* Question Text */
+  .question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* Options List */
+  .options-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Individual Option */
+  .option {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Option Letter (A, B, C, D) */
+  .option-letter {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  /* No Questions Message */
+  .no-questions {
+    font-size: 16px;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .quiz-card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .quiz-title {
+      font-size: 22px;
+    }
+  
+    .question-text {
+      font-size: 16px;
+    }
+  
+    .option {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quiz-title {
+      font-size: 20px;
+    }
+  
+    .question-text {
+      font-size: 14px;
+    }
+  
+    .option {
+      font-size: 13px;
+      padding: 6px;
+    }
+  }
+  .next-button {
+    background: #007bff; /* Primary blue */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    display: block;
+    width: fit-content;
+    align-self: center;
+  }
+  
+  .next-button:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+  }
+  
+  .next-button:active {
+    background: #004494; /* Even darker on click */
+    transform: scale(0.98);
+  }
+  

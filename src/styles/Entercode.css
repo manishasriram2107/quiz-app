@@ -1,0 +1,105 @@
+/* Main container */
+.enter-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: url('../images/lastbg.png') no-repeat center center/cover;
+}
+
+/* Dark Overlay */
+.enter-code-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust darkness (0.5 for semi-dark) */
+  z-index: 1;
+}
+
+/* Form box */
+.enter-code-container .form-box {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+  backdrop-filter: blur(10px); /* Blurs the background behind it */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 370px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* Prevent text blur by using translate instead of scale */
+.enter-code-container .form-box:hover {
+  transform: translateY(-4px); /* Moves the box slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Input field */
+.enter-code-container .input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.enter-code-container .submit-btn,
+.enter-code-container .lesson-btn,
+.enter-code-container .quiz-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Flashcard Button */
+.enter-code-container .submit-btn {
+  background: linear-gradient(135deg, #007bff, #0048a2);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.enter-code-container .submit-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #002f7d);
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.6);
+}
+
+/* Lesson Notes Button */
+.enter-code-container .lesson-btn {
+  background: linear-gradient(135deg, #28a745, #166b29);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.enter-code-container .lesson-btn:hover {
+  background: linear-gradient(135deg, #1e7e34, #124d1e);
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 15px rgba(40, 167, 69, 0.6);
+}
+
+.enter-code-container .quiz-btn {
+  background: linear-gradient(135deg, #a79028, #6a6b16);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(148, 167, 40, 0.4);
+}
+
+.enter-code-container .quiz-btn:hover {
+  background: linear-gradient(135deg, #697e1e, #424d12);
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 15px rgba(148, 167, 40, 0.6);
+}

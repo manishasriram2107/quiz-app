@@ -1,0 +1,103 @@
+/* 🌟 General Page Styling */
+.student-access-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #1c2833); /* Dark gradient bg */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* 🔙 Back Button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* 📝 Lesson Card */
+.lesson-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.lesson-content:hover {
+  transform: scale(1.02);
+}
+
+/* 📂 Download Button */
+.download-button {
+  margin-top: 15px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.3);
+}
+
+/* 🔄 Loading Text */
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  animation: fadeIn 1.2s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ❌ Error Message */
+.error-message {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.lesson-notes {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f9f9f9;
+  resize: none;
+}

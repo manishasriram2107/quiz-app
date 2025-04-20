@@ -1,0 +1,81 @@
+.page-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #2c426d;
+  }
+  
+  .upload-btn {
+    display: inline-block;
+    background-color: #2c426d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .upload-btn input {
+    display: none;
+  }
+  
+  .my-videos, .video-section {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .no-videos {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .video-item {
+    margin: 10px 0;
+  }
+  
+  .video-item video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .video-section h3 {
+    color: #333;
+  }
+  
+  .video-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  .video-grid iframe {
+    width: 30%; /* Adjusts the width so that three videos fit in one row */
+    height: 200px; /* Set a fixed height */
+  }
+
+  .back-btn {
+    background-color: #2c426d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .back-btn:hover {
+    background-color: #2b467acc;
+  }
+  
+  
