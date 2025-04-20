@@ -8,7 +8,7 @@ const GenerateAI = () => {
   const [generatedQuestions, setGeneratedQuestions] = useState([]);
   const navigate = useNavigate();
 
-  const GEMINI_API_KEY = "AIzaSyDpqdxVLUhR70Qqgp5aZtzeEoMn56tMrwA"; // Store this securely, preferably in an environment variable.
+  const GEMINI_API_KEY = "your-google-api-key"; // Store this securely, preferably in an environment variable.
 
   const handleGenerateAI = async () => {
     try {
@@ -22,7 +22,11 @@ const GenerateAI = () => {
           body: JSON.stringify({
             contents: [
               {
-                parts: [{ text: `Generate ${difficulty} level quiz questions for ${topic}.` }],
+                parts: [
+                  {
+                    text: `Generate ${difficulty} level quiz questions for ${topic}.`,
+                  },
+                ],
               },
             ],
           }),
@@ -30,11 +34,14 @@ const GenerateAI = () => {
       );
 
       const data = await response.json();
-      const aiResponse = data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response from AI.";
-      
+      const aiResponse =
+        data?.candidates?.[0]?.content?.parts?.[0]?.text ||
+        "No response from AI.";
+
       // Convert response to an array of questions (assuming AI returns a list format)
-      setGeneratedQuestions(aiResponse.split("\n").filter((q) => q.trim() !== ""));
-      
+      setGeneratedQuestions(
+        aiResponse.split("\n").filter((q) => q.trim() !== "")
+      );
     } catch (error) {
       console.error("Error generating quiz:", error);
     }
@@ -54,7 +61,10 @@ const GenerateAI = () => {
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
         />
-        <select value={difficulty} onChange={(e) => setDifficulty(e.target.value)}>
+        <select
+          value={difficulty}
+          onChange={(e) => setDifficulty(e.target.value)}
+        >
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
