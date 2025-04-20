@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+Quiz App – AI-Powered Assessment Platform
+React.js, Node.js, MongoDB, AI
+August 2024
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description:
+An intelligent and interactive web-based quiz application designed to simplify assessment creation and evaluation for teachers, using the power of AI.
 
-## Available Scripts
+Features:
+Manual or AI-Based Question Creation – Teachers can either manually enter questions or use AI to auto-generate questions based on topics
+Random Test Code Generation – Each quiz gets a unique test code to maintain security and streamline student access
+Google Drive Upload – Easily import bulk questions directly from Google Drive
+Certificate-Based Rewards – Recognize student performance with auto-generated certificates
+Student Evaluation Dashboard – Teachers can view, track, and analyze student submissions with performance reports
 
-In the project directory, you can run:
+Screen Design: 
+Faculty's Module :
+![image](https://github.com/user-attachments/assets/6c0e9a05-579b-412b-a76f-1779581a13f1)
+![image](https://github.com/user-attachments/assets/886ee8b3-b7e5-4c12-a38d-da2fbfb8f813)
+![image](https://github.com/user-attachments/assets/38b86c9b-170d-433a-ae46-2e868895a4eb)
+![image](https://github.com/user-attachments/assets/f7315701-ac46-4078-894c-0c162990b5d3)
+![image](https://github.com/user-attachments/assets/19ff937b-e1e1-4619-aaf2-a87ad1a05e27)
+Students Module :
+![image](https://github.com/user-attachments/assets/11581650-6388-4f6a-86e2-1f938b89e861)
+![image](https://github.com/user-attachments/assets/7e032ff9-d4ac-4f2a-ac1d-a8f354dda398)
+![image](https://github.com/user-attachments/assets/a81e6c45-c6e3-49d8-a376-4ad5eed9e7eb)
+![image](https://github.com/user-attachments/assets/a4df9ca1-cd4c-4853-89ae-8838dd9acbbf)
+![image](https://github.com/user-attachments/assets/7b461f24-7ca4-496b-b165-83b05c50a4f5)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tech Stack:
+Frontend: React.js (Vite)
+Backend: Node.js, Express.js
+Database: MongoDB
+AI Integration: Custom question-generation module using AI APIs
+Cloud Storage: Google Drive API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Future Enhancements:
+Timer-based quizzes
+Leaderboard system
+MCQ auto-grading with feedback
+Admin dashboard for platform control
 
-### `npm test`
+Developer:
+Manisha MuraliKrishnan
+GitHub: https://github.com/manishasriram2107
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
